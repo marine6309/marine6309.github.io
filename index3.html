@@ -14,13 +14,17 @@
             width: 100%;
             box-sizing: border-box;
         }
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+        }
         button {
             background-color: #4CAF50;
             color: white;
             padding: 10px 20px;
             border: none;
             cursor: pointer;
-            width: 100%;
+            width: 48%; /* 버튼 두 개가 나란히 보이도록 너비 조정 */
         }
         .result {
             margin-top: 20px;
@@ -34,7 +38,10 @@
     <input type="number" id="purchasePrice">
     <label for="currentPrice">현재 가격:</label>
     <input type="number" id="currentPrice">
-    <button onclick="calculateProfit()">수익률 계산</button>
+    <div class="button-container">
+        <button onclick="calculateProfit()">수익률 계산</button>
+        <button onclick="resetProfit()">초기화</button>
+    </div>
     <div id="profitResult" class="result"></div>
 
     <h2>물타기 계산기</h2>
@@ -46,7 +53,10 @@
     <input type="number" id="additionalPrice">
     <label for="additionalQuantity">추가 매수 수량:</label>
     <input type="number" id="additionalQuantity">
-    <button onclick="calculateAverage()">평균 단가 계산</button>
+    <div class="button-container">
+        <button onclick="calculateAverage()">평균 단가 계산</button>
+        <button onclick="resetAverage()">초기화</button>
+    </div>
     <div id="averageResult" class="result"></div>
 
     <script>
@@ -57,6 +67,12 @@
             document.getElementById("profitResult").innerHTML = "수익률: " + profit.toFixed(2) + "%";
         }
 
+        function resetProfit() {
+            document.getElementById("purchasePrice").value = "";
+            document.getElementById("currentPrice").value = "";
+            document.getElementById("profitResult").innerHTML = "";
+        }
+
         function calculateAverage() {
             const initialPrice = parseFloat(document.getElementById("initialPrice").value);
             const initialQuantity = parseFloat(document.getElementById("initialQuantity").value);
@@ -64,6 +80,14 @@
             const additionalQuantity = parseFloat(document.getElementById("additionalQuantity").value);
             const averagePrice = ((initialPrice * initialQuantity) + (additionalPrice * additionalQuantity)) / (initialQuantity + additionalQuantity);
             document.getElementById("averageResult").innerHTML = "평균 단가: " + averagePrice.toFixed(2);
+        }
+
+        function resetAverage() {
+            document.getElementById("initialPrice").value = "";
+            document.getElementById("initialQuantity").value = "";
+            document.getElementById("additionalPrice").value = "";
+            document.getElementById("additionalQuantity").value = "";
+            document.getElementById("averageResult").innerHTML = "";
         }
     </script>
 </body>
