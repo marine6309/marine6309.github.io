@@ -19,7 +19,7 @@
         th, td {
             border: 1px solid #ddd;
             padding: 10px;
-            text-align: center;
+            text-align: center; /* 센터 정렬 */
             font-size: 16px;
         }
         th {
@@ -43,6 +43,9 @@
         .vertical-label {
             width: 30%;
             font-weight: bold;
+        }
+        .total {
+            font-weight: bold; /* 총합계 진하게 표시 */
         }
     </style>
 </head>
@@ -103,8 +106,8 @@
         <input type="number" placeholder="롤러 비용" id="rollerCost" value="50000">
     </div>
     <div class="vertical-row">
-        <div class="vertical-label">총 합계</div>
-        <div id="totalCost1"></div>
+        <div class="vertical-label total">총 합계</div>
+        <div id="totalCost1" class="total"></div>
     </div>
 </div>
 
