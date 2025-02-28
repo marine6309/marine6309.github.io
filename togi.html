@@ -21,6 +21,10 @@
         th {
             background-color: #f2f2f2;
         }
+        input {
+            width: 100%;
+            box-sizing: border-box;
+        }
     </style>
 </head>
 <body>
@@ -47,38 +51,64 @@
     </thead>
     <tbody>
         <tr>
-            <td>100</td>
-            <td>1</td>
-            <td>=B4*3.3*C4</td>
-            <td>100000</td>
-            <td>=J4*E4</td>
-            <td>25톤</td>
-            <td>=VLOOKUP(G4, 참고!$A$2:$C$100, 2, FALSE)</td>
-            <td>=VLOOKUP(G4, 참고!$A$2:$C$100, 3, FALSE)</td>
-            <td>=D4/H4</td>
-            <td>=J4*I4</td>
+            <td><input type="number" placeholder="면적(평)" id="area1"></td>
+            <td><input type="number" placeholder="높이(M)" id="height1"></td>
+            <td id="soilVolume1"></td>
+            <td><input type="number" placeholder="흙 단가" id="soilPrice1"></td>
+            <td id="soilTotal1"></td>
+            <td>
+                <select id="vehicle1">
+                    <option value="25톤">25톤</option>
+                    <option value="10톤">10톤</option>
+                    <option value="5톤">5톤</option>
+                </select>
+            </td>
+            <td id="loadCapacity1"></td>
+            <td id="vehiclePrice1"></td>
+            <td id="vehicleCount1"></td>
+            <td id="vehicleTotal1"></td>
             <td>600000</td>
             <td>50000</td>
-            <td>=SUM(F4+K4+L4+M4)</td>
-        </tr>
-        <tr>
-            <td>100</td>
-            <td>1</td>
-            <td>=B5*3.3*C5</td>
-            <td>100000</td>
-            <td>=J5*E5</td>
-            <td>25톤</td>
-            <td>=VLOOKUP(G5, 참고!$A$2:$C$100, 2, FALSE)</td>
-            <td>=VLOOKUP(G5, 참고!$A$2:$C$100, 3, FALSE)</td>
-            <td>=D5/H5</td>
-            <td>=J5*I5</td>
-            <td>600000</td>
-            <td>50000</td>
-            <td>=SUM(F5+K5+L5+M5)</td>
+            <td id="totalCost1"></td>
         </tr>
         <!-- 추가 행은 같은 형식으로 작성 -->
     </tbody>
 </table>
+
+<script>
+    document.querySelectorAll('input').forEach(input => {
+        input.addEventListener('input', calculate);
+    });
+    
+    function calculate() {
+        const area = parseFloat(document.getElementById('area1').value) || 0;
+        const height = parseFloat(document.getElementById('height1').value) || 0;
+        const soilPrice = parseFloat(document.getElementById('soilPrice1').value) || 0;
+
+        const soilVolume = area * height * 3.3;
+        document.getElementById('soilVolume1').innerText = soilVolume.toFixed(2);
+
+        const soilTotal = soilVolume * soilPrice;
+        document.getElementById('soilTotal1').innerText = soilTotal.toFixed(2);
+
+        const vehicleChoice = document.getElementById('vehicle1').value;
+        // 차량 선택에 따른 적재량 및 단가 계산 로직 추가 필요 (예시로 고정값 사용)
+        const loadCapacity = vehicleChoice === '25톤' ? 25 : vehicleChoice === '10톤' ? 10 : 5;
+        document.getElementById('loadCapacity1').innerText = loadCapacity;
+
+        const vehicleCount = Math.ceil(soilVolume / loadCapacity);
+        document.getElementById('vehicleCount1').innerText = vehicleCount;
+
+        const vehiclePrice = 100000; // 예시 가격
+        document.getElementById('vehiclePrice1').innerText = vehiclePrice;
+
+        const vehicleTotal = vehicleCount * vehiclePrice;
+        document.getElementById('vehicleTotal1').innerText = vehicleTotal.toFixed(2);
+
+        const totalCost = soilTotal + vehicleTotal + 600000 + 50000; // 정지 비용 추가
+        document.getElementById('totalCost1').innerText = totalCost.toFixed(2);
+    }
+</script>
 
 </body>
 </html>
