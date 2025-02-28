@@ -24,9 +24,6 @@
         }
         th {
             background-color: #e0e0e0;
-            writing-mode: vertical-rl;
-            transform: rotate(180deg);
-            height: 100px; /* 높이 조정 */
         }
         input, select {
             width: 100%;
@@ -34,9 +31,18 @@
             padding: 5px;
             font-size: 16px;
         }
-        .two-line {
+        .vertical-table {
             display: flex;
             flex-direction: column;
+        }
+        .vertical-row {
+            display: flex;
+            justify-content: space-between;
+            margin: 5px 0;
+        }
+        .vertical-label {
+            width: 30%;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -44,57 +50,63 @@
 
 <h1>토지 성토 비용 계산기</h1>
 
-<table>
-    <thead>
-        <tr>
-            <th>면적(평)</th>
-            <th>높이(M)</th>
-            <th>흙 량(㎥)</th>
-            <th>흙 단가</th>
-            <th>흙 합계</th>
-            <th>차량 선택</th>
-            <th>적재 량(㎥)</th>
-            <th>차량 단가</th>
-            <th>차량 대수</th>
-            <th>차량 합계</th>
-            <th>굴삭기(6W)</th>
-            <th>롤러</th>
-            <th>총 합계</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td class="two-line">
-                <input type="number" placeholder="면적(평)" id="area1">
-            </td>
-            <td class="two-line">
-                <input type="number" placeholder="높이(M)" id="height1">
-            </td>
-            <td class="two-line" id="soilVolume1"></td>
-            <td class="two-line">
-                <input type="number" placeholder="흙 단가" id="soilPrice1">
-            </td>
-            <td class="two-line" id="soilTotal1"></td>
-            <td class="two-line">
-                <select id="vehicle1" onchange="calculate()">
-                    <option value="25톤">25톤</option>
-                    <option value="15톤">15톤</option>
-                </select>
-            </td>
-            <td class="two-line" id="loadCapacity1"></td>
-            <td class="two-line" id="vehiclePrice1"></td>
-            <td class="two-line" id="vehicleCount1"></td>
-            <td class="two-line" id="vehicleTotal1"></td>
-            <td class="two-line">
-                <input type="number" placeholder="굴삭기 비용" id="excavatorCost" value="600000">
-            </td>
-            <td class="two-line">
-                <input type="number" placeholder="롤러 비용" id="rollerCost" value="50000">
-            </td>
-            <td class="two-line" id="totalCost1"></td>
-        </tr>
-    </tbody>
-</table>
+<div class="vertical-table">
+    <div class="vertical-row">
+        <div class="vertical-label">면적(평)</div>
+        <input type="number" placeholder="면적(평)" id="area1">
+    </div>
+    <div class="vertical-row">
+        <div class="vertical-label">높이(M)</div>
+        <input type="number" placeholder="높이(M)" id="height1">
+    </div>
+    <div class="vertical-row">
+        <div class="vertical-label">흙 량(㎥)</div>
+        <div id="soilVolume1"></div>
+    </div>
+    <div class="vertical-row">
+        <div class="vertical-label">흙 단가</div>
+        <input type="number" placeholder="흙 단가" id="soilPrice1">
+    </div>
+    <div class="vertical-row">
+        <div class="vertical-label">흙 합계</div>
+        <div id="soilTotal1"></div>
+    </div>
+    <div class="vertical-row">
+        <div class="vertical-label">차량 선택</div>
+        <select id="vehicle1" onchange="calculate()">
+            <option value="25톤">25톤</option>
+            <option value="15톤">15톤</option>
+        </select>
+    </div>
+    <div class="vertical-row">
+        <div class="vertical-label">적재 량(㎥)</div>
+        <div id="loadCapacity1"></div>
+    </div>
+    <div class="vertical-row">
+        <div class="vertical-label">차량 단가</div>
+        <div id="vehiclePrice1"></div>
+    </div>
+    <div class="vertical-row">
+        <div class="vertical-label">차량 대수</div>
+        <div id="vehicleCount1"></div>
+    </div>
+    <div class="vertical-row">
+        <div class="vertical-label">차량 합계</div>
+        <div id="vehicleTotal1"></div>
+    </div>
+    <div class="vertical-row">
+        <div class="vertical-label">굴삭기(6W)</div>
+        <input type="number" placeholder="굴삭기 비용" id="excavatorCost" value="600000">
+    </div>
+    <div class="vertical-row">
+        <div class="vertical-label">롤러</div>
+        <input type="number" placeholder="롤러 비용" id="rollerCost" value="50000">
+    </div>
+    <div class="vertical-row">
+        <div class="vertical-label">총 합계</div>
+        <div id="totalCost1"></div>
+    </div>
+</div>
 
 <script>
     document.querySelectorAll('input').forEach(input => {
