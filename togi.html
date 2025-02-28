@@ -1,1 +1,84 @@
-TOGI
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>토지 성토 비용 계산기</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+<h1>토지 성토 비용 계산기</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>면적(평)</th>
+            <th>높이(M)</th>
+            <th>흙 량(㎥)</th>
+            <th>흙 단가</th>
+            <th>흙 합계</th>
+            <th>차량 선택</th>
+            <th>적재 량(㎥)</th>
+            <th>차량 단가</th>
+            <th>차량 대수</th>
+            <th>차량 합계</th>
+            <th>굴삭기(6W)</th>
+            <th>롤러</th>
+            <th>총 합계</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>100</td>
+            <td>1</td>
+            <td>=B4*3.3*C4</td>
+            <td>100000</td>
+            <td>=J4*E4</td>
+            <td>25톤</td>
+            <td>=VLOOKUP(G4, 참고!$A$2:$C$100, 2, FALSE)</td>
+            <td>=VLOOKUP(G4, 참고!$A$2:$C$100, 3, FALSE)</td>
+            <td>=D4/H4</td>
+            <td>=J4*I4</td>
+            <td>600000</td>
+            <td>50000</td>
+            <td>=SUM(F4+K4+L4+M4)</td>
+        </tr>
+        <tr>
+            <td>100</td>
+            <td>1</td>
+            <td>=B5*3.3*C5</td>
+            <td>100000</td>
+            <td>=J5*E5</td>
+            <td>25톤</td>
+            <td>=VLOOKUP(G5, 참고!$A$2:$C$100, 2, FALSE)</td>
+            <td>=VLOOKUP(G5, 참고!$A$2:$C$100, 3, FALSE)</td>
+            <td>=D5/H5</td>
+            <td>=J5*I5</td>
+            <td>600000</td>
+            <td>50000</td>
+            <td>=SUM(F5+K5+L5+M5)</td>
+        </tr>
+        <!-- 추가 행은 같은 형식으로 작성 -->
+    </tbody>
+</table>
+
+</body>
+</html>
