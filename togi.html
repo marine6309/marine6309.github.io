@@ -31,6 +31,10 @@
             padding: 5px;
             font-size: 16px;
         }
+        .two-line {
+            display: flex;
+            flex-direction: column;
+        }
     </style>
 </head>
 <body>
@@ -57,24 +61,34 @@
     </thead>
     <tbody>
         <tr>
-            <td><input type="number" placeholder="면적(평)" id="area1"></td>
-            <td><input type="number" placeholder="높이(M)" id="height1"></td>
-            <td id="soilVolume1"></td>
-            <td><input type="number" placeholder="흙 단가" id="soilPrice1"></td>
-            <td id="soilTotal1"></td>
-            <td>
+            <td class="two-line">
+                <input type="number" placeholder="면적(평)" id="area1">
+            </td>
+            <td class="two-line">
+                <input type="number" placeholder="높이(M)" id="height1">
+            </td>
+            <td class="two-line" id="soilVolume1"></td>
+            <td class="two-line">
+                <input type="number" placeholder="흙 단가" id="soilPrice1">
+            </td>
+            <td class="two-line" id="soilTotal1"></td>
+            <td class="two-line">
                 <select id="vehicle1" onchange="calculate()">
                     <option value="25톤">25톤</option>
                     <option value="15톤">15톤</option>
                 </select>
             </td>
-            <td id="loadCapacity1"></td>
-            <td id="vehiclePrice1"></td>
-            <td id="vehicleCount1"></td>
-            <td id="vehicleTotal1"></td>
-            <td><input type="number" placeholder="굴삭기 비용" id="excavatorCost" value="600000"></td>
-            <td><input type="number" placeholder="롤러 비용" id="rollerCost" value="50000"></td>
-            <td id="totalCost1"></td>
+            <td class="two-line" id="loadCapacity1"></td>
+            <td class="two-line" id="vehiclePrice1"></td>
+            <td class="two-line" id="vehicleCount1"></td>
+            <td class="two-line" id="vehicleTotal1"></td>
+            <td class="two-line">
+                <input type="number" placeholder="굴삭기 비용" id="excavatorCost" value="600000">
+            </td>
+            <td class="two-line">
+                <input type="number" placeholder="롤러 비용" id="rollerCost" value="50000">
+            </td>
+            <td class="two-line" id="totalCost1"></td>
         </tr>
     </tbody>
 </table>
