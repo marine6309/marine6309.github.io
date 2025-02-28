@@ -1,24 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>System Monitor</title>
-    <script>
-        function refreshPage() {
-            setTimeout(function() {
-                location.reload();
-            }, 2000);
+    <title>목차</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
         }
-        window.onload = refreshPage;
-    </script>
+        .menu {
+            list-style: none;
+            padding: 0;
+        }
+        .menu li {
+            margin: 15px 0;
+        }
+        .menu a {
+            text-decoration: none;
+            font-size: 20px;
+            color: #007bff;
+        }
+        .menu a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <h1>System Monitor</h1>
-    <p>호스트: {{ host }} | IP 주소: {{ ip_address }} | 현재 시간: {{ current_time }}</p>
-    <p>CPU 사용률: {{ cpu_usage }}%</p>
-    <p>메모리 사용률: {{ memory_usage }}%</p>
-    <p>디스크 사용률: {{ disk_usage }}%</p>
-    <p>네트워크 응답시간: {{ network_response_time }}ms</p>
+    <h1>목차</h1>
+    <ul class="menu">
+        <li><a href="invest.html">주식 수익률 계산기 & 물타기 계산기</a></li>
+        <li><a href="togi.html">토지 성토 비용 계산기</a></li>
+        <li><a href="monitor.html">시스템 모니터링</a></li>
+    </ul>
 </body>
 </html>
