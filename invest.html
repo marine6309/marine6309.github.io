@@ -52,9 +52,6 @@
     <label>수량:</label><br>
     <input type="number" id="quantity" placeholder="수량 입력"><br>
 
-    <label>투자금 (원):</label><br>
-    <input type="number" id="investment" placeholder="투자금 입력"><br>
-
     <button onclick="calculateProfit()">계산하기</button>
     <button class="reset" onclick="resetProfit()">초기화</button>
 
@@ -86,6 +83,7 @@
         <p>총 보유 수량: <span id="totalQuantity">0</span> 주</p>
         <p>기존 투자금: <span id="existingInvestment">0</span> 원</p>
         <p>총 투자금: <span id="totalInvestment">0</span> 원</p>
+        <p>새로운 수익률: <span id="newProfitRate">0</span> %</p>
     </div>
 
     <script>
@@ -93,15 +91,15 @@
             let buyPrice = parseFloat(document.getElementById("buyPrice").value);
             let sellPrice = parseFloat(document.getElementById("sellPrice").value);
             let quantity = parseInt(document.getElementById("quantity").value);
-            let investment = parseFloat(document.getElementById("investment").value);
 
-            if (isNaN(buyPrice) || isNaN(sellPrice) || isNaN(quantity) || isNaN(investment) || quantity <= 0) {
+            if (isNaN(buyPrice) || isNaN(sellPrice) || isNaN(quantity) || quantity <= 0) {
                 alert("올바른 값을 입력하세요.");
                 return;
             }
 
             let profit = (sellPrice - buyPrice) * quantity;
             let profitRate = ((sellPrice - buyPrice) / buyPrice) * 100;
+            let investment = buyPrice * quantity;
 
             document.getElementById("profit").textContent = profit.toLocaleString();
             document.getElementById("profitRate").textContent = profitRate.toFixed(2);
@@ -112,7 +110,6 @@
             document.getElementById("buyPrice").value = "";
             document.getElementById("sellPrice").value = "";
             document.getElementById("quantity").value = "";
-            document.getElementById("investment").value = "";
             document.getElementById("profit").textContent = "0";
             document.getElementById("profitRate").textContent = "0";
             document.getElementById("investmentAmount").textContent = "0";
@@ -129,17 +126,22 @@
                 return;
             }
 
+            // 물타기 계산
             let totalCost = (avgBuyPrice * existingQuantity) + (newBuyPrice * newQuantity);
             let totalQuantity = existingQuantity + newQuantity;
-            let newAvgPrice = totalCost / totalQuantity;
+            let newAvgPrice = Math.floor(totalCost / totalQuantity); // 소수점 이하 버림 처리
+
+            // 수익률 계산
+            let newProfitRate = ((newBuyPrice - newAvgPrice) / newAvgPrice) * 100;
 
             let existingInvestment = avgBuyPrice * existingQuantity;
             let totalInvestment = totalCost;
 
-            document.getElementById("newAvgPrice").textContent = newAvgPrice.toFixed(2);
+            document.getElementById("newAvgPrice").textContent = newAvgPrice.toLocaleString(); // 쉼표 구분
             document.getElementById("totalQuantity").textContent = totalQuantity;
             document.getElementById("existingInvestment").textContent = existingInvestment.toLocaleString();
             document.getElementById("totalInvestment").textContent = totalInvestment.toLocaleString();
+            document.getElementById("newProfitRate").textContent = newProfitRate.toFixed(2);
         }
 
         function resetAveraging() {
@@ -151,6 +153,7 @@
             document.getElementById("totalQuantity").textContent = "0";
             document.getElementById("existingInvestment").textContent = "0";
             document.getElementById("totalInvestment").textContent = "0";
+            document.getElementById("newProfitRate").textContent = "0";
         }
     </script>
 
