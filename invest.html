@@ -7,16 +7,24 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            max-width: 400px;
+            max-width: 500px;
             margin: 20px auto;
             text-align: center;
         }
-        input {
+        .section {
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+        .section h3 {
+            margin-bottom: 10px;
+        }
+        .section input {
             width: 80%;
             padding: 8px;
             margin: 5px 0;
         }
-        button {
+        .section button {
             width: 40%;
             padding: 10px;
             margin: 10px 5px;
@@ -31,9 +39,22 @@
         button:hover {
             opacity: 0.8;
         }
-        .result {
+        .result p {
             margin-top: 10px;
             font-size: 18px;
+        }
+        .result span {
+            font-weight: bold;
+        }
+        /* 수익률 계산 구분 */
+        .profit-section {
+            background-color: #f1f9ff;
+            border: 2px solid #007bff;
+        }
+        /* 물타기 계산 구분 */
+        .averaging-section {
+            background-color: #f9f7f1;
+            border: 2px solid #28a745;
         }
     </style>
 </head>
@@ -42,48 +63,52 @@
     <h2>주식 수익률 & 물타기 계산기</h2>
 
     <!-- 수익률 계산 -->
-    <h3>수익률 계산</h3>
-    <label>매수가 (원):</label><br>
-    <input type="number" id="buyPrice" placeholder="매수가 입력"><br>
+    <div class="section profit-section">
+        <h3>수익률 계산</h3>
+        <label>매수가 (원):</label><br>
+        <input type="number" id="buyPrice" placeholder="매수가 입력"><br>
 
-    <label>매도가 (원):</label><br>
-    <input type="number" id="sellPrice" placeholder="매도가 입력"><br>
+        <label>매도가 (원):</label><br>
+        <input type="number" id="sellPrice" placeholder="매도가 입력"><br>
 
-    <label>수량:</label><br>
-    <input type="number" id="quantity" placeholder="수량 입력"><br>
+        <label>수량:</label><br>
+        <input type="number" id="quantity" placeholder="수량 입력"><br>
 
-    <button onclick="calculateProfit()">계산하기</button>
-    <button class="reset" onclick="resetProfit()">초기화</button>
+        <button onclick="calculateProfit()">계산하기</button>
+        <button class="reset" onclick="resetProfit()">초기화</button>
 
-    <div class="result">
-        <p>수익금: <span id="profit">0</span> 원</p>
-        <p>수익률: <span id="profitRate">0</span> %</p>
-        <p>투자금: <span id="investmentAmount">0</span> 원</p>
+        <div class="result">
+            <p>수익금: <span id="profit">0</span> 원</p>
+            <p>수익률: <span id="profitRate">0</span> %</p>
+            <p>투자금: <span id="investmentAmount">0</span> 원</p>
+        </div>
     </div>
 
     <!-- 물타기 계산 -->
-    <h3>물타기 계산</h3>
-    <label>기존 평균 매수가 (원):</label><br>
-    <input type="number" id="avgBuyPrice" placeholder="기존 평균 매수가 입력"><br>
+    <div class="section averaging-section">
+        <h3>물타기 계산</h3>
+        <label>기존 평균 매수가 (원):</label><br>
+        <input type="number" id="avgBuyPrice" placeholder="기존 평균 매수가 입력"><br>
 
-    <label>기존 보유 수량:</label><br>
-    <input type="number" id="existingQuantity" placeholder="기존 보유 수량 입력"><br>
+        <label>기존 보유 수량:</label><br>
+        <input type="number" id="existingQuantity" placeholder="기존 보유 수량 입력"><br>
 
-    <label>추가 매수가 (원):</label><br>
-    <input type="number" id="newBuyPrice" placeholder="추가 매수가 입력"><br>
+        <label>추가 매수가 (원):</label><br>
+        <input type="number" id="newBuyPrice" placeholder="추가 매수가 입력"><br>
 
-    <label>추가 수량:</label><br>
-    <input type="number" id="newQuantity" placeholder="추가 수량 입력"><br>
+        <label>추가 수량:</label><br>
+        <input type="number" id="newQuantity" placeholder="추가 수량 입력"><br>
 
-    <button onclick="calculateAveraging()">계산하기</button>
-    <button class="reset" onclick="resetAveraging()">초기화</button>
+        <button onclick="calculateAveraging()">계산하기</button>
+        <button class="reset" onclick="resetAveraging()">초기화</button>
 
-    <div class="result">
-        <p>새로운 평균 매수가: <span id="newAvgPrice">0</span> 원</p>
-        <p>총 보유 수량: <span id="totalQuantity">0</span> 주</p>
-        <p>기존 투자금: <span id="existingInvestment">0</span> 원</p>
-        <p>총 투자금: <span id="totalInvestment">0</span> 원</p>
-        <p>새로운 수익률: <span id="newProfitRate">0</span> %</p>
+        <div class="result">
+            <p>새로운 평균 매수가: <span id="newAvgPrice">0</span> 원</p>
+            <p>총 보유 수량: <span id="totalQuantity">0</span> 주</p>
+            <p>기존 투자금: <span id="existingInvestment">0</span> 원</p>
+            <p>총 투자금: <span id="totalInvestment">0</span> 원</p>
+            <p>새로운 수익률: <span id="newProfitRate">0</span> %</p>
+        </div>
     </div>
 
     <script>
