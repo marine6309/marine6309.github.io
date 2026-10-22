@@ -4,3 +4,5 @@
 
 @media(max-width:640px){.nav nav>a.tools-link{display:inline;font-size:10px}.nav nav{gap:10px}.nav{padding:0 15px}}
 
+
+.year-filter{display:flex;align-items:center;flex-wrap:wrap;gap:14px;margin-bottom:18px;padding:18px 22px;background:#edf2e8;border:1px solid #d8e2d2;border-radius:12px}.year-filter label{font-weight:700}.year-filter select{border:1px solid #809778;background:#fff;color:var(--green);font-size:17px;font-weight:700;border-radius:8px;padding:8px 36px 8px 14px}.year-filter p{font-size:12px;color:#526b59;margin:0}.badge.planned{background:#fff1d8;color:#8a6124;margin-top:5px}.badge.unknown{background:#edf0f5;color:#657086}.status-tabs{flex-wrap:wrap}.search-row{flex-wrap:wrap}@media(max-width:600px){.year-filter{gap:9px;padding:14px}.year-filter label{font-size:12px}.year-filter select{font-size:15px}.year-filter p{width:100%;font-size:11px}.status-tabs{gap:10px}}

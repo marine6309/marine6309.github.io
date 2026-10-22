@@ -10,7 +10,8 @@ const FESTIVALS = [
     "officialUrl": "https://www.narafestival.com/",
     "sourceUrl": "https://www.ihc.go.kr/www/selectBbsNttView.do?bbsNo=11&key=2338&nttNo=178379",
     "sourceName": "화천군",
-    "verified": true
+    "verified": true,
+    "checkedAt": "2026-10-20"
   },
   {
     "name": "진해군항제",
@@ -23,7 +24,8 @@ const FESTIVALS = [
     "officialUrl": "https://www.jgfestival.or.kr/",
     "sourceUrl": "https://www.jgfestival.or.kr/sub/info.php",
     "sourceName": "진해군항제위원회",
-    "verified": true
+    "verified": true,
+    "checkedAt": "2026-10-20"
   },
   {
     "name": "함평나비대축제",
@@ -36,7 +38,8 @@ const FESTIVALS = [
     "officialUrl": "https://www.hpftf.or.kr/",
     "sourceUrl": "https://www.hpftf.or.kr/contentsView.do?pageId=www201",
     "sourceName": "함평축제관광재단",
-    "verified": true
+    "verified": true,
+    "checkedAt": "2026-10-20"
   },
   {
     "name": "춘향제",
@@ -49,7 +52,8 @@ const FESTIVALS = [
     "officialUrl": "https://www.chunhyang.org/",
     "sourceUrl": "https://www.chunhyang.org/bbs/board.php?bo_table=k_faq",
     "sourceName": "춘향제",
-    "verified": true
+    "verified": true,
+    "checkedAt": "2026-10-20"
   },
   {
     "name": "곡성세계장미축제",
@@ -62,7 +66,8 @@ const FESTIVALS = [
     "officialUrl": "https://www.gokseong.go.kr/tour/festivity/rose",
     "sourceUrl": "https://www.gokseong.go.kr/tour/festivity/rose",
     "sourceName": "곡성군 문화관광",
-    "verified": true
+    "verified": true,
+    "checkedAt": "2026-10-20"
   },
   {
     "name": "강릉단오제",
@@ -75,7 +80,8 @@ const FESTIVALS = [
     "officialUrl": "https://www.danojefestival.or.kr/kor/",
     "sourceUrl": "https://www.danojefestival.or.kr/kor/gdfestival/dano1.html",
     "sourceName": "강릉단오제위원회",
-    "verified": true
+    "verified": true,
+    "checkedAt": "2026-10-20"
   },
   {
     "name": "보령머드축제",
@@ -88,7 +94,8 @@ const FESTIVALS = [
     "officialUrl": "https://mudfestival.or.kr/",
     "sourceUrl": "https://mudfestival.or.kr/festival/contents/view?contentsNo=6&level=2&menuNo=34",
     "sourceName": "보령축제관광재단",
-    "verified": true
+    "verified": true,
+    "checkedAt": "2026-10-20"
   },
   {
     "name": "괴산고추축제",
@@ -101,7 +108,8 @@ const FESTIVALS = [
     "officialUrl": "http://spicy-fe.kr/",
     "sourceUrl": "https://www.goesan.go.kr/www/selectBbsNttView.do?bbsNo=251&integrDeptCode=&key=1249&nttNo=135679&pageIndex=14&searchCnd=all&searchCtgry=&searchKrwd=",
     "sourceName": "괴산군",
-    "verified": true
+    "verified": true,
+    "checkedAt": "2026-10-20"
   },
   {
     "name": "무주반딧불축제",
@@ -114,7 +122,8 @@ const FESTIVALS = [
     "officialUrl": "https://www.firefly.or.kr/",
     "sourceUrl": "https://www.firefly.or.kr/content/index.sgk?dname=F01&gubun=f010301",
     "sourceName": "무주반딧불축제위원회",
-    "verified": true
+    "verified": true,
+    "checkedAt": "2026-10-20"
   },
   {
     "name": "서울세계불꽃축제",
@@ -128,7 +137,8 @@ const FESTIVALS = [
     "sourceUrl": "https://news.seoul.go.kr/culture/archives/534160",
     "sourceName": "서울특별시",
     "verified": true,
-    "note": "9월 4일 전야제·9월 5일 본행사"
+    "note": "9월 4일 전야제·9월 5일 본행사",
+    "checkedAt": "2026-10-20"
   },
   {
     "name": "안동국제탈춤페스티벌",
@@ -141,7 +151,8 @@ const FESTIVALS = [
     "officialUrl": "https://www.maskdance.com/",
     "sourceUrl": "https://www.maskdance.com/2024/sub1/sub1.asp",
     "sourceName": "안동국제탈춤페스티벌",
-    "verified": true
+    "verified": true,
+    "checkedAt": "2026-10-20"
   },
   {
     "name": "김제지평선축제",
@@ -154,7 +165,8 @@ const FESTIVALS = [
     "officialUrl": "https://festival.gimje.go.kr/",
     "sourceUrl": "https://www.gimje.go.kr/tour/index.gimje?menuCd=DOM_000000309001000000",
     "sourceName": "김제시 문화관광",
-    "verified": true
+    "verified": true,
+    "checkedAt": "2026-10-20"
   },
   {
     "name": "대전효문화뿌리축제",
@@ -167,7 +179,8 @@ const FESTIVALS = [
     "officialUrl": "https://djjunggu.go.kr/hyo-ppuri/index.do",
     "sourceUrl": "https://djjunggu.go.kr/hyo-ppuri/index.do",
     "sourceName": "대전광역시 중구",
-    "verified": true
+    "verified": true,
+    "checkedAt": "2026-10-20"
   },
   {
     "name": "진주남강유등축제",
@@ -180,7 +193,8 @@ const FESTIVALS = [
     "officialUrl": "https://yudeung.com/",
     "sourceUrl": "https://yudeung.com/info/overview?lang=en",
     "sourceName": "진주남강유등축제",
-    "verified": true
+    "verified": true,
+    "checkedAt": "2026-10-20"
   },
   {
     "name": "광주 추억의 충장축제",
@@ -193,7 +207,8 @@ const FESTIVALS = [
     "officialUrl": "https://recollection.kr/",
     "sourceUrl": "https://recollection.kr/bbs/board.php?bo_table=news&wr_id=137",
     "sourceName": "충장축제 공식 홈페이지",
-    "verified": true
+    "verified": true,
+    "checkedAt": "2026-10-20"
   },
   {
     "name": "울산공업축제",
@@ -206,7 +221,8 @@ const FESTIVALS = [
     "officialUrl": "https://webzine.ulsan.go.kr/contents/view.do?bbsId=BBSMSTR_000000000180&nttId=16050",
     "sourceUrl": "https://webzine.ulsan.go.kr/contents/view.do?bbsId=BBSMSTR_000000000180&nttId=16050",
     "sourceName": "울산광역시",
-    "verified": true
+    "verified": true,
+    "checkedAt": "2026-10-20"
   },
   {
     "name": "임실N치즈축제",
@@ -219,7 +235,8 @@ const FESTIVALS = [
     "officialUrl": "https://imsilfestival.com/?r=2026",
     "sourceUrl": "https://www.imsilfestival.com/?c=609%2F614&r=2026",
     "sourceName": "임실N치즈축제",
-    "verified": true
+    "verified": true,
+    "checkedAt": "2026-10-20"
   },
   {
     "name": "보은대추축제",
@@ -233,7 +250,8 @@ const FESTIVALS = [
     "sourceUrl": "https://boeunjujube.com/126",
     "sourceName": "보은대추축제 공식 일정표",
     "verified": true,
-    "note": "공식 사이트 일자별 일정표에서 10월 16~25일 확인. 일부 페이지 접근은 제한될 수 있음."
+    "note": "공식 사이트 일자별 일정표에서 10월 16~25일 확인. 일부 페이지 접근은 제한될 수 있음.",
+    "checkedAt": "2026-10-20"
   },
   {
     "name": "세계문화유산 화순 고인돌 가을꽃 축제",
@@ -246,7 +264,8 @@ const FESTIVALS = [
     "officialUrl": "https://www.hwasun.go.kr/gallery.do?M=050100000000&S=S05&act=view&b_code=0000000090&b_list=10&keyField=&keyWord=&list_no=560&nPage=2&orderby=REG_DATE&v_type=EBT&vlist_no_npage=3",
     "sourceUrl": "https://www.hwasun.go.kr/gallery.do?M=050100000000&S=S05&act=view&b_code=0000000090&b_list=10&keyField=&keyWord=&list_no=560&nPage=2&orderby=REG_DATE&v_type=EBT&vlist_no_npage=3",
     "sourceName": "화순군 문화관광 공식 축제장 안내(2026-10-07)",
-    "verified": true
+    "verified": true,
+    "checkedAt": "2026-10-20"
   },
   {
     "name": "문경사과축제",
@@ -259,7 +278,8 @@ const FESTIVALS = [
     "officialUrl": "https://www.mgapple.or.kr/",
     "sourceUrl": "https://www.mgapple.or.kr/",
     "sourceName": "문경관광공사 축제 공식 홈페이지",
-    "verified": true
+    "verified": true,
+    "checkedAt": "2026-10-20"
   },
   {
     "name": "서울억새축제",
@@ -272,7 +292,8 @@ const FESTIVALS = [
     "officialUrl": "https://festival.seoul.go.kr/festival/main/festivalView.do?festacode=683",
     "sourceUrl": "https://festival.seoul.go.kr/festival/main/festivalView.do?festacode=683",
     "sourceName": "서울시 펀서울 공식 축제 안내",
-    "verified": true
+    "verified": true,
+    "checkedAt": "2026-10-20"
   },
   {
     "name": "탐라문화제",
@@ -285,7 +306,8 @@ const FESTIVALS = [
     "officialUrl": "http://www.tamnafestival.kr/",
     "sourceUrl": "https://www.visitjeju.net/kr/festival/view?contentsid=CNTS_300000000014580",
     "sourceName": "제주관광공사 비짓제주 제65회 탐라문화제 안내",
-    "verified": true
+    "verified": true,
+    "checkedAt": "2026-10-20"
   },
   {
     "name": "강릉커피축제",
@@ -298,7 +320,8 @@ const FESTIVALS = [
     "officialUrl": "https://www.coffeefestival.net/",
     "sourceUrl": "https://www.coffeefestival.net/",
     "sourceName": "강릉커피축제 공식 홈페이지",
-    "verified": true
+    "verified": true,
+    "checkedAt": "2026-10-20"
   },
   {
     "name": "광주김치축제",
@@ -311,7 +334,8 @@ const FESTIVALS = [
     "officialUrl": "https://kimchi.gwangju.go.kr/",
     "sourceUrl": "https://kimchi.gwangju.go.kr/index.php?cate=001002",
     "sourceName": "광주김치축제 공식 축제소개",
-    "verified": true
+    "verified": true,
+    "checkedAt": "2026-10-20"
   },
   {
     "name": "대한민국 국향대전",
@@ -324,7 +348,8 @@ const FESTIVALS = [
     "officialUrl": "https://www.hpftf.or.kr/contentsView.do?pageId=www252",
     "sourceUrl": "https://www.hpftf.or.kr/contentsView.do?pageId=www252",
     "sourceName": "함평축제관광재단 공식 축제개요",
-    "verified": true
+    "verified": true,
+    "checkedAt": "2026-10-20"
   },
   {
     "name": "익산 천만송이 국화축제",
@@ -337,7 +362,8 @@ const FESTIVALS = [
     "officialUrl": "https://www.iksan.go.kr/gukhwa",
     "sourceUrl": "https://www.iksan.go.kr/gukhwa/index.do?menuUid=ff80808197387a4f019752f075ec033a",
     "sourceName": "익산시 국화축제 공식 축제개요",
-    "verified": true
+    "verified": true,
+    "checkedAt": "2026-10-20"
   },
   {
     "name": "여주오곡나루축제",
@@ -350,7 +376,8 @@ const FESTIVALS = [
     "officialUrl": "https://www.yjfestival.or.kr/",
     "sourceUrl": "https://www.yjcf.or.kr/brd/board/200/L/menu/341?bbIdx=2505&brdType=R",
     "sourceName": "여주세종문화관광재단 개최 공지",
-    "verified": true
+    "verified": true,
+    "checkedAt": "2026-10-20"
   },
   {
     "name": "월출산 국화축제",
@@ -364,7 +391,8 @@ const FESTIVALS = [
     "sourceUrl": "https://www.mcst.go.kr/site/s_culture/festival/festivalView.jsp?pRo=105&pSeq=11974",
     "sourceName": "문화체육관광부 월출산 국화축제 개별 공식 안내",
     "verified": true,
-    "note": "축제 개별 정부 안내 페이지에서 일정 확인."
+    "note": "축제 개별 정부 안내 페이지에서 일정 확인.",
+    "checkedAt": "2026-10-20"
   },
   {
     "name": "마산가고파국화축제",
@@ -378,7 +406,8 @@ const FESTIVALS = [
     "sourceUrl": "https://www.mcst.go.kr/site/s_culture/festival/festivalView.jsp?pRo=4&pSeq=12860",
     "sourceName": "문화체육관광부 지역축제 안내",
     "verified": true,
-    "note": "창원시 축제 개요 페이지 접근 오류로 문화체육관광부 개별 축제 안내를 연결."
+    "note": "창원시 축제 개요 페이지 접근 오류로 문화체육관광부 개별 축제 안내를 연결.",
+    "checkedAt": "2026-10-20"
   },
   {
     "name": "청송사과축제",
@@ -391,7 +420,8 @@ const FESTIVALS = [
     "officialUrl": "https://www.cs.go.kr/00007862.web",
     "sourceUrl": "https://www.cs.go.kr/00007862.web",
     "sourceName": "청송군 문화관광 공식 축제 소개",
-    "verified": true
+    "verified": true,
+    "checkedAt": "2026-10-20"
   },
   {
     "name": "제주올레걷기축제",
@@ -404,7 +434,8 @@ const FESTIVALS = [
     "officialUrl": "https://contents.ollepass.org/static/festival_view/2026/01/index.html?name=festival",
     "sourceUrl": "https://www.visitjeju.net/kr/festival/view?contentsid=CNTS_300000000014508",
     "sourceName": "제주관광공사 비짓제주 공식 축제 안내",
-    "verified": true
+    "verified": true,
+    "checkedAt": "2026-10-20"
   },
   {
     "name": "구미라면축제",
@@ -417,7 +448,8 @@ const FESTIVALS = [
     "officialUrl": "https://www.gumi.go.kr/tour/contents.do?mid=0303000000",
     "sourceUrl": "https://www.gumi.go.kr/portal/board/post/view.do?bcIdx=211&idx=843219&mid=0504020000",
     "sourceName": "구미시 공식 보도자료",
-    "verified": true
+    "verified": true,
+    "checkedAt": "2026-10-20"
   },
   {
     "name": "부산불꽃축제",
@@ -430,7 +462,8 @@ const FESTIVALS = [
     "officialUrl": "https://www.busan.go.kr/nbtnewsBU/1752768",
     "sourceUrl": "https://www.busan.go.kr/nbtnewsBU/1752768?curPage=&srchBeginDt=&srchEndDt=&srchKey=&srchText=",
     "sourceName": "부산시 공식 제21회 부산불꽃축제 보도자료",
-    "verified": true
+    "verified": true,
+    "checkedAt": "2026-10-20"
   },
   {
     "name": "고흥유자축제",
@@ -443,7 +476,8 @@ const FESTIVALS = [
     "officialUrl": "https://www.goheungyuja.com/",
     "sourceUrl": "https://www.goheungyuja.com/sub.do?menuCd=01_01",
     "sourceName": "고흥유자축제 공식 축제개요",
-    "verified": true
+    "verified": true,
+    "checkedAt": "2026-10-20"
   },
   {
     "name": "파주장단콩축제",
@@ -457,7 +491,114 @@ const FESTIVALS = [
     "sourceUrl": "https://www.paju.go.kr/user/board/BD_board.view.do?bbsCd=2001&seq=20260724182345116",
     "sourceName": "파주시 농업기술센터 2026 농산물축제 참가부스 모집 공고",
     "verified": true,
-    "note": "관광포털 축제소개에는 2025 일정이 남아 있어, 2026년 7월 공식 모집 공고의 날짜를 채택."
+    "note": "관광포털 축제소개에는 2025 일정이 남아 있어, 2026년 7월 공식 모집 공고의 날짜를 채택.",
+    "checkedAt": "2026-10-20"
+  },
+  {
+    "name": "화천산천어축제",
+    "region": "강원",
+    "city": "화천군",
+    "start": "2027-01-09",
+    "end": "2027-01-31",
+    "category": "체험·레저",
+    "place": "화천천 및 화천읍 일원",
+    "officialUrl": "https://www.narafestival.com/",
+    "sourceUrl": "https://www.narafestival.com/ice_en/",
+    "sourceName": "재단법인 나라",
+    "verified": true,
+    "checkedAt": "2026-10-22",
+    "note": "공식 홈페이지의 2027년 개최 기간 확인. 요금·예약·세부 프로그램은 별도 공지를 확인해주세요."
+  },
+  {
+    "name": "상주곶감축제",
+    "region": "경북",
+    "city": "상주시",
+    "start": "2027-01-22",
+    "end": "2027-01-24",
+    "category": "먹거리",
+    "place": "태평성대 경상감영공원 일원",
+    "officialUrl": "https://www.sangju.go.kr/gotgamfestival/",
+    "sourceUrl": "https://www.sangju.go.kr/gotgamfestival/",
+    "sourceName": "상주시 축제 공식 홈페이지",
+    "verified": true,
+    "checkedAt": "2026-10-22",
+    "note": "공식 홈페이지의 2027년 안내 배너에 표시된 기간입니다."
+  },
+  {
+    "name": "논산세계딸기산업엑스포",
+    "region": "충남",
+    "city": "논산시",
+    "start": "2027-02-26",
+    "end": "2027-03-21",
+    "category": "먹거리",
+    "place": "논산시민가족공원 일원",
+    "officialUrl": "https://tour.chungnam.go.kr/prog/fstvl/kor/sub02_02_02/view.do?fstvlNo=273",
+    "sourceUrl": "https://tour.chungnam.go.kr/prog/fstvl/kor/sub02_02_02/view.do?fstvlNo=273",
+    "sourceName": "충청남도 관광 공식 안내",
+    "verified": true,
+    "checkedAt": "2026-10-22",
+    "note": "딸기 체험·먹거리·산업 전시를 함께 즐기는 엑스포입니다. 세부 행사장과 프로그램은 방문 전 확인해주세요."
+  },
+  {
+    "name": "제1회 섬비엔날레",
+    "region": "충남",
+    "city": "보령시",
+    "start": "2027-04-03",
+    "end": "2027-05-30",
+    "category": "문화·전통",
+    "place": "원산도·고대도 일원",
+    "officialUrl": "https://www.chungnam.go.kr/cnportal/media/article/view.do?articleNo=MD0003436985&menuNo=500170&pageIndex=",
+    "sourceUrl": "https://www.chungnam.go.kr/cnportal/media/article/view.do?articleNo=MD0003436985&menuNo=500170&pageIndex=",
+    "sourceName": "충청남도 공식 안내",
+    "verified": true,
+    "checkedAt": "2026-10-22",
+    "note": "충청남도·보령시가 주최하는 섬을 주제로 한 국제 예술행사입니다."
+  },
+  {
+    "name": "대구핫페스티벌(가칭)",
+    "region": "대구",
+    "city": "중구",
+    "start": "2027-05-29",
+    "end": "2027-05-30",
+    "category": "문화·전통",
+    "place": "중앙로 및 북성로·향촌동·교동·종로·동성로 일원",
+    "officialUrl": "https://www.culture.go.kr/portal/cltBnf/cltSup/view.do?indRow=149&menuNo=200104&rcrtSn=229331&sWord=&selectType=&viewTp=3&weekju=&yearmonth=",
+    "sourceUrl": "https://www.culture.go.kr/portal/cltBnf/cltSup/view.do?indRow=149&menuNo=200104&rcrtSn=229331&sWord=&selectType=&viewTp=3&weekju=&yearmonth=",
+    "sourceName": "문화포털 · 대구문화예술진흥원 공고",
+    "verified": false,
+    "checkedAt": "2026-10-22",
+    "tentative": true,
+    "note": "감독단 모집 공고의 축제개요(안)에 기재된 계획 일정입니다. 행사명과 날짜는 최종 공지에서 변경될 수 있습니다."
+  },
+  {
+    "name": "고양국제꽃박람회",
+    "region": "경기",
+    "city": "고양시",
+    "start": null,
+    "end": null,
+    "category": "꽃·자연",
+    "place": "세부 장소 발표 대기",
+    "officialUrl": "https://flower.or.kr/main/",
+    "sourceUrl": "https://flower.or.kr/main/",
+    "sourceName": "고양국제박람회재단",
+    "verified": false,
+    "checkedAt": "2026-10-22",
+    "year": 2027,
+    "note": "공식 홈페이지에서 2027년 개최 예고를 확인했습니다. 정확한 개최 날짜와 장소는 발표 대기 중이며, 전년도 날짜를 적용하지 않았습니다."
+  },
+  {
+    "name": "서울라이트 광화문",
+    "region": "서울",
+    "city": "종로구",
+    "start": "2026-12-11",
+    "end": "2027-01-03",
+    "category": "불꽃·야경",
+    "place": "광화문광장",
+    "officialUrl": "https://festival.seoul.go.kr/festival/main/festivalView.do?festacode=372",
+    "sourceUrl": "https://festival.seoul.go.kr/festival/main/festivalView.do?festacode=372",
+    "sourceName": "서울특별시 펀서울",
+    "verified": true,
+    "checkedAt": "2026-10-22",
+    "note": "2026년 말부터 2027년 1월까지 이어지는 미디어아트 행사입니다. 두 연도에서 모두 확인할 수 있습니다."
   }
 ];
-
